@@ -1,7 +1,6 @@
 <script setup lang='ts'>
 import { computed, ref } from 'vue'
 import { NModal, NTabPane, NTabs } from 'naive-ui'
-import General from './General.vue'
 import Advanced from './Advanced.vue'
 import About from './About.vue'
 import { useAuthStore } from '@/store'
@@ -39,6 +38,7 @@ const show = computed({
   <NModal v-model:show="show" :auto-focus="false" preset="card" style="width: 95%; max-width: 640px">
     <div>
       <NTabs v-model:value="active" type="line" animated>
+        <!--
         <NTabPane name="General" tab="General">
           <template #tab>
             <SvgIcon class="text-lg" icon="ri:file-user-line" />
@@ -48,6 +48,7 @@ const show = computed({
             <General />
           </div>
         </NTabPane>
+-->
         <NTabPane v-if="isChatGPTAPI" name="Advanced" tab="Advanced">
           <template #tab>
             <SvgIcon class="text-lg" icon="ri:equalizer-line" />

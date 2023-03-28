@@ -91,6 +91,15 @@ function handleRegenerate() {
       :class="[inversion ? 'ml-2' : 'mr-2']"
     >
       <AvatarComponent :image="inversion" />
+      <!--
+    <HoverButton @click="show = true">
+      <span class="text-xl text-[#4f555e] dark:text-white">
+        <SvgIcon icon="ri:settings-4-line" />
+      </span>
+    </HoverButton>
+
+    <Setting v-if="show" v-model:visible="show" />
+-->
     </div>
     <div class="overflow-hidden text-sm " :class="[inversion ? 'items-end' : 'items-start']">
       <p class="text-xs text-[#b4bbc4]" :class="[inversion ? 'text-right' : 'text-left']">
